@@ -22,5 +22,3 @@ for infile in glob.glob('*.pdf'):
 	with open(outfileName, 'w') as outfile:
 		for line in fullText:
 			outfile.write(line)
-
-	outfile.close()
