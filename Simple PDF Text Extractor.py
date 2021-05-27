@@ -7,10 +7,7 @@ outputPath = mainPath + '/Output'
 
 os.chdir(mainPath + '/Input')
 
-for infile in glob.glob('*.pdf'):
-	if __name__ == '__main__':
-		ocrmypdf.ocr(infile, 'output.pdf', deskew=True)
-	
+for infile in glob.glob('*.pdf'):	
 	fullText = []
 
 	pdfFile = open(infile, 'rb')
